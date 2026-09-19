@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>スマホ文字入力の練習｜シニア向け ゆっくり練習</title>
+<title>スマホの文字入力の練習｜フリック入力をゆっくり・無料（シニア向け）</title>
 <meta name="description" content="スマホの文字入力をシニア・初心者がゆっくり練習できる無料サイト。フリックでもケータイ打ちでも、つぎに押すキーと方向を文字で案内します。時間制限なし・登録不要・アプリも不要です。">
 <meta name="robots" content="index,follow,max-image-preview:large">
 <meta name="theme-color" content="#c2451a">
@@ -13,7 +13,7 @@
 <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 
-<meta property="og:title" content="スマホ文字入力の練習｜ゆっくり文字入力">
+<meta property="og:title" content="スマホの文字入力の練習｜フリック入力をゆっくり（シニア向け）">
 <meta property="og:description" content="フリックでもケータイ打ちでも。つぎに押すキーを文字で案内する、シニア向けの無料練習。時間制限なし。">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://yukkuri-moji.kkpwebninja.com/">
@@ -54,6 +54,14 @@
 }
 </script>
 
+<!-- 確認用: ?preview=1 で広告とGA4を止める（自分で開くときに表示回数・アクセス数を増やさない） -->
+<script>
+(function(){
+  var p = /[?&](preview|noads)=1/.test(location.search) || location.hostname === 'localhost' || location.hostname === '127.0.0.1' || /^192\.168\./.test(location.hostname);
+  window.__kkpPreview = p;
+  if (p) { window['ga-disable-G-2LM85GJN0L'] = true; }
+})();
+</script>
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2LM85GJN0L"></script>
 <script>
@@ -64,7 +72,7 @@
 </script>
 
 <!-- AdSense -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1298304917726270" crossorigin="anonymous"></script>
+<script>if (!window.__kkpPreview) { var kkpAd = document.createElement('script'); kkpAd.async = true; kkpAd.crossOrigin = 'anonymous'; kkpAd.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1298304917726270'; document.head.appendChild(kkpAd); }</script>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Hiragino Maru Gothic ProN','BIZ UDPGothic','Meiryo',sans-serif;background:#fff;color:#222;line-height:1.7;-webkit-text-size-adjust:100%}
@@ -430,7 +438,7 @@ function showResult(){
   inEl.blur();
   $('result').scrollIntoView({block: 'start'});
   track('moji_complete', {level: lv, sec: rec.sec, miss: miss, skip: skipped});
-  if (!adPushed) { adPushed = true; try { (window.adsbygoogle = window.adsbygoogle || []).push({}); } catch (e) {} }
+  if (!adPushed && !window.__kkpPreview) { adPushed = true; try { (window.adsbygoogle = window.adsbygoogle || []).push({}); } catch (e) {} }
 }
 
 function setLevel(n){
