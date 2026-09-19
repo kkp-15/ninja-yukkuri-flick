@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://yukkuri-moji.kkpwebninja.com/sitemap.xml

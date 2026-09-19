@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>スマホ文字入力の練習｜シニア向け ゆっくり練習</title>
+<meta name="description" content="スマホの文字入力をシニア・初心者がゆっくり練習できる無料サイト。フリックでもケータイ打ちでも、つぎに押すキーと方向を文字で案内します。時間制限なし・登録不要・アプリも不要です。">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#c2451a">
+<link rel="canonical" href="https://yukkuri-moji.kkpwebninja.com/">
+<!-- WEBNINJA_UNIFIED_FAVICON -->
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+<meta property="og:title" content="スマホ文字入力の練習｜ゆっくり文字入力">
+<meta property="og:description" content="フリックでもケータイ打ちでも。つぎに押すキーを文字で案内する、シニア向けの無料練習。時間制限なし。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://yukkuri-moji.kkpwebninja.com/">
+<meta property="og:site_name" content="ゆっくり文字入力">
+<meta property="og:image" content="https://yukkuri-moji.kkpwebninja.com/ogp.png?v=1">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://yukkuri-moji.kkpwebninja.com/ogp.png?v=1">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "@id": "https://yukkuri-moji.kkpwebninja.com/#app",
+      "name": "ゆっくり文字入力",
+      "url": "https://yukkuri-moji.kkpwebninja.com/",
+      "description": "スマホの文字入力をシニア・初心者がゆっくり練習できる無料サイト。フリックでもケータイ打ちでも、つぎに押すキーと方向を文字で案内します。",
+      "applicationCategory": "EducationalApplication",
+      "operatingSystem": "Web",
+      "isAccessibleForFree": true,
+      "offers": {"@type":"Offer","price":"0","priceCurrency":"JPY"},
+      "audience": {"@type":"Audience","audienceType":"スマホ初心者・シニア"},
+      "datePublished": "2026-09-19",
+      "dateModified": "2026-09-19",
+      "author": {"@type":"Organization","name":"web忍者の砦","url":"https://kkpwebninja.com/"}
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type":"Question","name":"無料ですか？アプリを入れる必要はありますか？","acceptedAnswer":{"@type":"Answer","text":"無料で、登録もアプリも要りません。このページを開いて、入力の枠をタップすれば始められます。"}},
+        {"@type":"Question","name":"フリックとケータイ打ちのどちらで練習すればいいですか？","acceptedAnswer":{"@type":"Answer","text":"どちらでも練習できます。案内には両方の打ち方を出しています。フリックは1回で1文字、ケータイ打ちは同じキーを何回か押して文字を選びます。"}},
+        {"@type":"Question","name":"漢字に変わってしまいます。","acceptedAnswer":{"@type":"Answer","text":"この練習では、かなのまま確定します。候補の漢字は選ばずに、キーボード右下の「確定」を押してください。"}},
+        {"@type":"Question","name":"成績は保存されますか？","acceptedAnswer":{"@type":"Answer","text":"練習の記録は、このスマホのブラウザの中にだけ保存します。名前やメールアドレスは要りません。"}}
+      ]
+    }
+  ]
+}
+</script>
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2LM85GJN0L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-2LM85GJN0L');
+</script>
+
+<!-- AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1298304917726270" crossorigin="anonymous"></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Hiragino Maru Gothic ProN','BIZ UDPGothic','Meiryo',sans-serif;background:#fff;color:#222;line-height:1.7;-webkit-text-size-adjust:100%}
+a{color:#1a6fc4}
+.bar{display:flex;align-items:baseline;gap:12px;padding:8px 16px;border-bottom:3px solid #d9531f}
+.bar .site{font-weight:bold;color:#c2451a;font-size:1rem;text-decoration:none}
+.bar .help-link{margin-left:auto;font-size:.95rem}
+main{max-width:640px;margin:0 auto;padding:12px 16px 8px}
+h1{font-size:1.25rem;line-height:1.4;margin-bottom:4px}
+.lead{font-size:1rem;color:#333;margin-bottom:10px}
+
+/* レベル選び：四角いボタンを横に並べる */
+.levels{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid #bfb29a;border-radius:6px;overflow:hidden;margin-bottom:12px}
+.levels button{font:inherit;font-size:.95rem;line-height:1.3;padding:8px 2px;background:#fff;color:#222;border:0;border-left:1px solid #bfb29a;cursor:pointer;min-height:52px}
+.levels button:first-child{border-left:0}
+.levels button[aria-pressed="true"]{background:#d9531f;color:#fff;font-weight:bold}
+.levels small{display:block;font-size:.78rem}
+
+/* 練習 */
+#practice{scroll-margin-top:4px}
+.status{display:flex;justify-content:space-between;font-size:.95rem;color:#444;border-bottom:1px solid #e0d5c3;padding-bottom:2px}
+.q{font-size:2.6rem;line-height:1.35;letter-spacing:.06em;font-weight:bold;margin:6px 0 4px;word-break:break-all}
+.q.long{font-size:1.9rem}
+.q.single{font-size:3.4rem}
+.q span{border-bottom:4px solid transparent}
+.q .ok{color:#2e7d32}
+.q .ng{color:#c62828;background:#fde4e4}
+.q .next{border-bottom-color:#d9531f;background:#fff1e3}
+.guide{font-size:1.02rem;line-height:1.55;border-left:4px solid #d9531f;background:#fffaf3;padding:4px 10px;margin-bottom:8px;min-height:3.2em}
+.guide .lbl{display:inline-block;min-width:6.2em;color:#555}
+.guide b{font-size:1.12rem;color:#111}
+.guide .same{display:block;font-size:.92rem;color:#8a3a12}
+.in{width:100%;font:inherit;font-size:1.6rem;padding:8px 10px;border:2px solid #555;border-radius:6px;background:#fff;color:#111;letter-spacing:.06em}
+.in:focus{outline:3px solid #f0a060;outline-offset:1px;border-color:#c2451a}
+.in::placeholder{color:#777;font-size:1.05rem;letter-spacing:0}
+.msg{min-height:1.7em;font-size:1.08rem;font-weight:bold;margin-top:4px}
+.msg.good{color:#2e7d32}.msg.bad{color:#c62828}.msg.wait{color:#8a3a12}
+.tools{display:flex;gap:10px;flex-wrap:wrap;margin:6px 0 4px}
+.tools button{font:inherit;font-size:.92rem;padding:8px 12px;background:#fff;border:1px solid #999;border-radius:6px;color:#333;cursor:pointer}
+
+/* 結果 */
+#result h2{font-size:1.3rem;margin:6px 0 8px}
+.rt{width:100%;border-collapse:collapse;font-size:1.05rem;margin-bottom:8px}
+.rt th,.rt td{border:1px solid #ddd;padding:8px 10px;text-align:left}
+.rt thead th{background:#fff8ee;font-size:.95rem}
+.rt td{font-weight:bold}
+.rt td.prev{font-weight:normal;color:#555}
+.note{font-size:.95rem;color:#444;margin-bottom:10px}
+.rbtns{display:flex;gap:10px;flex-wrap:wrap}
+.rbtns button{font:inherit;font-size:1.05rem;padding:12px 18px;border-radius:6px;cursor:pointer;border:1px solid #999;background:#fff;color:#222}
+.rbtns .primary{background:#d9531f;border-color:#b8441a;color:#fff;font-weight:bold}
+
+/* 広告（標準サイズ） */
+.kkp-ad{text-align:center;margin:1.4rem auto 0;max-width:680px;min-height:288px;padding-top:6px}
+.kkp-ad-label{font-size:11px;color:#999;letter-spacing:.08em;margin:0 0 6px;line-height:1}
+.kkp-ad ins.adsbygoogle{display:block;width:300px;height:250px;margin:0 auto}
+@media(min-width:768px){.kkp-ad{min-height:318px}.kkp-ad ins.adsbygoogle{width:336px;height:280px}}
+
+/* 読み物 */
+.doc{max-width:640px;margin:28px auto 0;padding:0 16px;font-size:1rem;line-height:1.85;color:#333}
+.doc h2{font-size:1.2rem;color:#222;border-left:4px solid #d9531f;background:#fff8ee;padding:4px 10px;margin:26px 0 10px}
+.doc h3{font-size:1.05rem;margin:16px 0 4px;color:#222}
+.doc p,.doc ul,.doc ol{margin-bottom:10px}
+.doc ul,.doc ol{padding-left:1.4em}
+.doc .date{font-size:.88rem;color:#666}
+.ftable{border-collapse:collapse;width:100%;font-size:1rem;margin:6px 0 4px}
+.ftable th,.ftable td{border:1px solid #ddd;padding:5px 4px;text-align:center}
+.ftable thead th{background:#fff8ee;font-size:.85rem;font-weight:normal}
+.ftable tbody th{background:#fffaf3}
+.small{font-size:.9rem;color:#555}
+.doc details{border-bottom:1px solid #e0d5c3;padding:8px 0}
+.doc summary{cursor:pointer;font-weight:bold}
+.doc details p{margin:6px 0 0}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<header class="bar">
+  <a class="site" href="/">ゆっくり文字入力</a>
+  <a class="help-link" href="#help">使い方</a>
+</header>
+
+<main>
+  <h1>スマホ文字入力の練習（シニア・はじめての方向け）</h1>
+  <p class="lead">上の字を、下の枠に打ちます。時間制限はありません。フリックでもケータイ打ちでも練習できます。</p>
+
+  <div class="levels" id="levels" role="group" aria-label="練習の段階">
+    <button type="button" data-lv="1" aria-pressed="true">1<small>1文字</small></button>
+    <button type="button" data-lv="2" aria-pressed="false">2<small>みじかい言葉</small></button>
+    <button type="button" data-lv="3" aria-pressed="false">3<small>゛と小さい字</small></button>
+    <button type="button" data-lv="4" aria-pressed="false">4<small>ひとこと</small></button>
+  </div>
+
+  <section id="practice" aria-label="練習">
+    <div class="status"><span id="prog">1 / 10 問目</span><span id="miss">打ち直し 0回</span></div>
+    <div class="q" id="q" aria-live="polite"></div>
+    <div class="guide" id="guide"></div>
+    <input class="in" id="in" type="text" lang="ja" inputmode="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" enterkeyhint="done" placeholder="ここをタップすると、キーボードが出ます" aria-label="ここに打つ">
+    <div class="msg" id="msg" role="status" aria-live="polite"></div>
+    <div class="tools">
+      <button type="button" id="guide-toggle">案内をかくす</button>
+      <button type="button" id="skip">この問題をとばす</button>
+    </div>
+  </section>
+
+  <section id="result" hidden aria-labelledby="result-h">
+    <h2 id="result-h">10問おわりました</h2>
+    <table class="rt">
+      <thead><tr><th scope="col">項目</th><th scope="col">今回</th><th scope="col">前回</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">かかった時間</th><td id="r-time">—</td><td class="prev" id="p-time">—</td></tr>
+        <tr><th scope="row">1問あたり</th><td id="r-per">—</td><td class="prev" id="p-per">—</td></tr>
+        <tr><th scope="row">打ち直し</th><td id="r-miss">—</td><td class="prev" id="p-miss">—</td></tr>
+        <tr><th scope="row">とばした問題</th><td id="r-skip">—</td><td class="prev" id="p-skip">—</td></tr>
+      </tbody>
+    </table>
+    <p class="note" id="r-note"></p>
+    <div class="rbtns">
+      <button type="button" class="primary" id="again">もういちど（10問）</button>
+      <button type="button" id="next-lv">つぎの段階へ</button>
+    </div>
+    <div class="kkp-ad">
+      <div class="kkp-ad-label">広告</div>
+      <ins class="adsbygoogle" style="display:block"
+           data-ad-client="ca-pub-1298304917726270"
+           data-ad-slot="2937937957"
+           data-ad-format="rectangle"
+           data-full-width-responsive="false"></ins>
+    </div>
+  </section>
+</main>
+
+<section class="doc" id="help" aria-labelledby="help-h">
+  <h2 id="help-h">使い方</h2>
+  <p class="date">公開 2026年9月19日</p>
+  <ol>
+    <li>入力の枠をタップすると、スマホのキーボードが出ます。</li>
+    <li>上に出ている字を打ちます。つぎに打つ字には下線がつき、押すキーと方向が案内に出ます。</li>
+    <li>ぜんぶ打てたら、キーボード右下の「確定」を押します。つぎの問題に進みます。</li>
+    <li>ちがう字は赤くなります。消すキー（⌫）で消して、打ち直してください。</li>
+  </ol>
+  <p>段階は1から順に進めるのがおすすめです。1は1文字ずつ、2は「さくら」のような短い言葉、3は「きって」「がっこう」のように ゛ や小さい字が入る言葉、4は家族に送るような短いひとことです。</p>
+
+  <h2>フリックとケータイ打ちのちがい</h2>
+  <p>スマホの「あ」「か」「さ」…と12個のキーが並ぶキーボードには、打ち方が2つあります。</p>
+  <h3>フリック</h3>
+  <p>キーに指を置いて、上下左右にすべらせて字を選びます。「か」のキーなら、そのまま離すと「か」、左へすべらせると「き」、上で「く」、右で「け」、下で「こ」です。1回の動きで1文字が打てるので、慣れると速く打てます。</p>
+  <h3>ケータイ打ち（トグル入力）</h3>
+  <p>同じキーを何回か押して字を選びます。「か」のキーを1回で「か」、2回で「き」、3回で「く」です。昔の携帯電話と同じ打ち方です。同じキーの字が続くとき（「あい」など）は、右向きの矢印（→）のキーを押してから、つぎの字を打ちます。</p>
+  <p>どちらが正しいということはありません。この練習では、案内に両方の打ち方を出しています。</p>
+
+  <h2>フリック入力の50音表</h2>
+  <p>キーに指を置いてから、どちらへすべらせるかの一覧です。</p>
+  <table class="ftable">
+    <thead><tr><th scope="col">キー</th><th scope="col">そのまま</th><th scope="col">←左</th><th scope="col">↑上</th><th scope="col">→右</th><th scope="col">↓下</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">あ</th><td>あ</td><td>い</td><td>う</td><td>え</td><td>お</td></tr>
+      <tr><th scope="row">か</th><td>か</td><td>き</td><td>く</td><td>け</td><td>こ</td></tr>
+      <tr><th scope="row">さ</th><td>さ</td><td>し</td><td>す</td><td>せ</td><td>そ</td></tr>
+      <tr><th scope="row">た</th><td>た</td><td>ち</td><td>つ</td><td>て</td><td>と</td></tr>
+      <tr><th scope="row">な</th><td>な</td><td>に</td><td>ぬ</td><td>ね</td><td>の</td></tr>
+      <tr><th scope="row">は</th><td>は</td><td>ひ</td><td>ふ</td><td>へ</td><td>ほ</td></tr>
+      <tr><th scope="row">ま</th><td>ま</td><td>み</td><td>む</td><td>め</td><td>も</td></tr>
+      <tr><th scope="row">や</th><td>や</td><td>「</td><td>ゆ</td><td>」</td><td>よ</td></tr>
+      <tr><th scope="row">ら</th><td>ら</td><td>り</td><td>る</td><td>れ</td><td>ろ</td></tr>
+      <tr><th scope="row">わ</th><td>わ</td><td>を</td><td>ん</td><td>ー</td><td>—</td></tr>
+    </tbody>
+  </table>
+  <p class="small">「が」「ぱ」のような ゛ ゜ の字や、「っ」「ゃ」のような小さい字は、もとの字を打ってから、左下にある ゛ ゜ 小 のキーを押します。キーの表示は機種によって少しちがいます。</p>
+
+  <h2>よくある質問</h2>
+  <details><summary>無料ですか？アプリを入れる必要はありますか？</summary><p>無料で、登録もアプリも要りません。このページを開いて、入力の枠をタップすれば始められます。</p></details>
+  <details><summary>フリックとケータイ打ちのどちらで練習すればいいですか？</summary><p>どちらでも練習できます。案内には両方の打ち方を出しています。ふだん使っている打ち方で練習してください。</p></details>
+  <details><summary>漢字に変わってしまいます。</summary><p>この練習では、かなのまま確定します。候補に出る漢字は選ばずに、キーボード右下の「確定」を押してください。漢字になってしまったら、消して打ち直します。</p></details>
+  <details><summary>キーボードが「ABC」や英語のキーになっています。</summary><p>キーボードの下のほうにある地球儀のキーや「あいう」のキーで、日本語のかなのキーボードに切り替えてから練習してください。ローマ字で打っても練習はできます。</p></details>
+  <details><summary>パソコンのキーボードも練習したいです。</summary><p>姉妹サイトの<a href="https://yukkuri-typing.kkpwebninja.com/">ゆっくりタイピング</a>で、パソコンのローマ字入力を練習できます。大きな文字と、つぎに打つキーが光るキーボードの図が出ます。</p></details>
+  <details><summary>成績は保存されますか？</summary><p>段階ごとに直近5回の記録を、このスマホのブラウザの中にだけ保存します。名前やメールアドレスは要りません。</p></details>
+</section>
+
+<!-- WEBNINJA_RELATED_APPS -->
+<div style="max-width:640px;margin:2rem auto 0;padding:0 16px;font-family:inherit;">
+  <div style="font-weight:800;color:#8b6b3d;font-size:0.9rem;margin-bottom:0.3rem;border-bottom:1px solid #f0e6d2;padding-bottom:0.3rem;">あわせて使えるアプリ</div>
+  <a href="https://yukkuri-typing.kkpwebninja.com/" style="display:block;padding:0.4rem 0;color:#1565c0;text-decoration:none;font-size:0.95rem;line-height:1.6;">ゆっくりタイピング — パソコンのローマ字入力を大きな文字で練習</a>
+</div>
+
+<!-- WEBNINJA_UNIFIED_FOOTER -->
+<footer style="text-align:center;padding:2rem 1rem 2.5rem;font-size:0.78rem;color:#94a3b8;line-height:2;border-top:1px solid #f0e6d2;margin-top:2.5rem;background:#fffcf7;">
+  <div style="font-weight:800;color:#8b6b3d;font-size:0.85rem;margin-bottom:0.4rem;">web忍者の砦</div>
+  <div>
+    <a href="https://kkpwebninja.com/" target="_blank" rel="noopener" style="color:#8b6b3d;text-decoration:none;margin:0 0.5rem;">本丸トップ</a>·
+    <a href="https://kkpwebninja.com/apps" target="_blank" rel="noopener" style="color:#8b6b3d;text-decoration:none;margin:0 0.5rem;">全アプリ一覧</a>·
+    <a href="https://privacypolicy.kkpwebninja.com/" target="_blank" rel="noopener" style="color:#8b6b3d;text-decoration:none;margin:0 0.5rem;">プライバシーポリシー</a>·
+    <a href="https://kkpwebninja.com/otoiawase" target="_blank" rel="noopener" style="color:#8b6b3d;text-decoration:none;margin:0 0.5rem;">お問い合わせ</a>·
+    <a href="https://x.com/kkp_webninja" target="_blank" rel="noopener" style="color:#8b6b3d;text-decoration:none;margin:0 0.5rem;">@kkp_webninja</a>
+  </div>
+  <div style="margin-top:0.5rem;color:#bfa97a;">© 2025-2026 web忍者の砦</div>
+</footer>
+
+<script>
+(function(){
+'use strict';
+var COUNT = 10;
+var WORDS = {
+  1: 'あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろわをん'.split(''),
+  2: ['いぬ','ねこ','さくら','うみ','やま','かさ','はな','そら','みかん','くるま','さかな','たぬき','きつね','すいか','ふとん','つくえ','いす','まくら','あさひ','ゆうひ','くつした','おかし','みそしる','さとう','しお','こめ','はし','ほん','ひこうき','ふね','ひまわり','なつ','ふゆ','はる','あき','にわとり','めろん','れもん','もも','かき','なし','くり','すし','そうめん','かえる','ほたる','つき','ほし','あめ','ゆき','くも','かわ','いけ','たいよう','てんき'],
+  3: ['きって','がっこう','きょう','でんわ','ぎゅうにゅう','ちゃわん','しゃしん','じてんしゃ','びょういん','ぶどう','ざっし','べんとう','ぱん','えんぴつ','きっぷ','でんしゃ','ばす','ごはん','じゃがいも','ぎょうざ','しょうゆ','おちゃ','りょこう','ぼうし','げんき','ちょっと','いっしょ','がんばる','まっすぐ','にっき','ざぶとん','てぶくろ','ひゃくえん','きゅうり','でぐち','いりぐち','かばん','めがね','さんぽ','ぽすと'],
+  4: ['ありがとう','おはよう','おやすみ','いまからかえります','いまえきについたよ','げんきにしてる','またあおうね','きをつけてね','おめでとう','よろしくおねがいします','すこしおくれます','りょうかいです','あとででんわするね','ごはんたべた','きょうはさむいね','おつかれさま','たのしかったね','またれんらくします','いってきます','ただいま','むかえにきてください','かさをもっていってね','いまどこにいるの']
+};
+
+// 12キーのかなキーボード。並びは そのまま・左・上・右・下（フリックの方向）
+var KEYS = {'あ':'あいうえお','か':'かきくけこ','さ':'さしすせそ','た':'たちつてと','な':'なにぬねの','は':'はひふへほ','ま':'まみむめも','や':'や「ゆ」よ','ら':'らりるれろ','わ':'わをんー'};
+// ケータイ打ちで押す回数（や・わ の行は括弧や空きがあるので別に持つ）
+var TOGGLE = {'や':{'や':1,'ゆ':2,'よ':3},'わ':{'わ':1,'を':2,'ん':3,'ー':4}};
+var DIRS = ['そのまま離す','←左へ','↑上へ','→右へ','↓下へ'];
+var SMALL = {'ぁ':'あ','ぃ':'い','ぅ':'う','ぇ':'え','ぉ':'お','っ':'つ','ゃ':'や','ゅ':'ゆ','ょ':'よ','ゎ':'わ'};
+
+function locate(ch){
+  var base = ch, mod = null, n;
+  if (SMALL[ch]) { base = SMALL[ch]; mod = 'small'; }
+  else {
+    n = ch.normalize('NFD');
+    if (n.length === 2) { base = n[0]; mod = n[1] === '゙' ? 'daku' : 'handaku'; }
+  }
+  for (var k in KEYS) {
+    var i = KEYS[k].indexOf(base);
+    if (i >= 0) return {key:k, idx:i, base:base, mod:mod, taps:(TOGGLE[k] ? TOGGLE[k][base] : i + 1)};
+  }
+  return null;
+}
+function modText(mod){
+  if (mod === 'daku') return '、そのあと <b>゛゜小</b> を1回';
+  if (mod === 'handaku') return '、そのあと <b>゛゜小</b> を2回';
+  if (mod === 'small') return '、そのあと <b>゛゜小</b> を1回';
+  return '';
+}
+
+var $ = function(id){ return document.getElementById(id); };
+var qEl = $('q'), inEl = $('in'), msgEl = $('msg'), guideEl = $('guide');
+var lv = 1, list = [], pos = 0, composing = false, hadError = false, done = false;
+var miss = 0, skipped = 0, startAt = 0, adPushed = false;
+var decks = {};
+var GUIDE_KEY = 'yukkuri_moji_guide_off', HIST_KEY = 'yukkuri_moji_hist_v1';
+var guideOff = false;
+try { guideOff = localStorage.getItem(GUIDE_KEY) === '1'; } catch (e) {}
+
+function track(name, params){ if (typeof gtag === 'function') gtag('event', name, params || {}); }
+
+// 一周するまで同じ問題を出さない
+function draw(n){
+  var out = [];
+  while (out.length < n) {
+    if (!decks[lv] || !decks[lv].length) {
+      var d = WORDS[lv].slice();
+      for (var i = d.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = d[i]; d[i] = d[j]; d[j] = t; }
+      decks[lv] = d;
+    }
+    out.push(decks[lv].pop());
+  }
+  return out;
+}
+
+// 入力を比べやすい形に：カタカナ→ひらがな、ローマ字の打ちかけ（末尾の英字）は外す
+function norm(v){
+  v = v.normalize('NFC').replace(/[ァ-ヶ]/g, function(c){ return String.fromCharCode(c.charCodeAt(0) - 0x60); }).replace(/\s/g, '');
+  return v.replace(/[a-zA-Z'’]+$/, '');
+}
+
+function startSet(){
+  list = draw(COUNT); pos = 0; miss = 0; skipped = 0; startAt = 0;
+  $('result').hidden = true; $('practice').hidden = false;
+  showQ();
+}
+function showQ(){
+  done = false; hadError = false; inEl.value = '';
+  $('prog').textContent = (pos + 1) + ' / ' + COUNT + ' 問目';
+  $('miss').textContent = '打ち直し ' + miss + '回';
+  msgEl.textContent = ''; msgEl.className = 'msg';
+  render();
+}
+
+function render(){
+  var t = list[pos], k = norm(inEl.value), html = '', bad = -1, i;
+  for (i = 0; i < t.length; i++) {
+    var cls = '';
+    if (i < k.length) { if (k[i] === t[i]) cls = 'ok'; else { cls = 'ng'; if (bad < 0) bad = i; } }
+    else if (i === k.length) cls = 'next';
+    html += '<span class="' + cls + '">' + t[i] + '</span>';
+  }
+  qEl.innerHTML = html;
+  qEl.className = 'q' + (t.length === 1 ? ' single' : t.length > 7 ? ' long' : '');
+  var over = k.length > t.length;
+  var err = bad >= 0 || over;
+  if (err && !hadError) { miss++; $('miss').textContent = '打ち直し ' + miss + '回'; }
+  hadError = err;
+
+  if (/[一-鿿]/.test(inEl.value)) { say('bad', '漢字に変わっています。消して、かなのまま「確定」してください'); }
+  else if (err) { say('bad', '赤い字がちがいます。消すキー（⌫）で消して、打ち直してください'); }
+  else if (k === t) {
+    if (composing) say('wait', 'あっています。右下の「確定」を押してください');
+    else finishQ();
+  } else say('', '');
+  showGuide(err ? Math.max(0, bad) : k.length, err);
+}
+
+function showGuide(i, err){
+  if (guideOff) { guideEl.hidden = true; return; }
+  guideEl.hidden = false;
+  var t = list[pos];
+  if (err) { guideEl.innerHTML = '赤い字から先を消すと、つぎに押すキーがここに出ます。'; return; }
+  if (i >= t.length) { guideEl.innerHTML = '全部打てました。右下の「確定」を押します。'; return; }
+  var ch = t[i], L = locate(ch);
+  if (!L) { guideEl.innerHTML = 'つぎの字 <b>' + ch + '</b>'; return; }
+  var flick = L.idx === 0 ? '<b>' + L.key + '</b> を軽く押して離す' : '<b>' + L.key + '</b> に指を置いて <b>' + DIRS[L.idx] + '</b>';
+  var toggle = '<b>' + L.key + '</b> を <b>' + L.taps + '回</b>';
+  var same = '';
+  if (i > 0) { var P = locate(t[i - 1]); if (P && P.key === L.key) same = '<span class="same">ケータイ打ちでは、前の字と同じキーなので、先に <b>→</b> のキーを押します</span>'; }
+  guideEl.innerHTML = 'つぎの字 <b>' + ch + '</b><br>' +
+    '<span class="lbl">フリック</span>' + flick + modText(L.mod) + '<br>' +
+    '<span class="lbl">ケータイ打ち</span>' + toggle + modText(L.mod) + same;
+}
+
+function say(cls, text){ msgEl.className = 'msg' + (cls ? ' ' + cls : ''); msgEl.textContent = text; }
+
+function finishQ(){
+  if (done) return;
+  done = true;
+  say('good', pos + 1 < COUNT ? 'できました。つぎの問題です' : 'できました');
+  setTimeout(nextQ, 450);
+}
+function nextQ(){
+  pos++;
+  if (pos >= COUNT) { showResult(); return; }
+  showQ();
+}
+
+function fmt(sec){ sec = Math.round(sec); return sec >= 60 ? Math.floor(sec / 60) + '分' + (sec % 60) + '秒' : sec + '秒'; }
+function loadHist(){ try { return JSON.parse(localStorage.getItem(HIST_KEY) || '{}'); } catch (e) { return {}; } }
+
+function showResult(){
+  var sec = startAt ? (Date.now() - startAt) / 1000 : 0;
+  var hist = loadHist(), mine = hist[lv] || [], prev = mine[0];
+  var rec = {d: new Date().toISOString().slice(0, 10), sec: Math.round(sec), miss: miss, skip: skipped};
+  $('r-time').textContent = fmt(rec.sec);
+  $('r-per').textContent = (sec / COUNT).toFixed(1) + '秒';
+  $('r-miss').textContent = miss + '回';
+  $('r-skip').textContent = skipped + '問';
+  $('p-time').textContent = prev ? fmt(prev.sec) : '—';
+  $('p-per').textContent = prev ? (prev.sec / COUNT).toFixed(1) + '秒' : '—';
+  $('p-miss').textContent = prev ? prev.miss + '回' : '—';
+  $('p-skip').textContent = prev ? prev.skip + '問' : '—';
+  mine.unshift(rec); hist[lv] = mine.slice(0, 5);
+  var today = 0;
+  for (var k in hist) hist[k].forEach(function(r){ if (r.d === rec.d) today++; });
+  try { localStorage.setItem(HIST_KEY, JSON.stringify(hist)); } catch (e) {}
+  var note = '段階' + lv + '・今日は' + today + '回目の練習です。';
+  if (prev) note += rec.sec < prev.sec ? '前回より ' + (prev.sec - rec.sec) + '秒 早くなりました。' : '前回の記録と並べています。';
+  else note += 'この記録は、このスマホに保存しました。';
+  $('r-note').textContent = note;
+  $('next-lv').hidden = lv >= 4;
+  $('practice').hidden = true; $('result').hidden = false;
+  inEl.blur();
+  $('result').scrollIntoView({block: 'start'});
+  track('moji_complete', {level: lv, sec: rec.sec, miss: miss, skip: skipped});
+  if (!adPushed) { adPushed = true; try { (window.adsbygoogle = window.adsbygoogle || []).push({}); } catch (e) {} }
+}
+
+function setLevel(n){
+  lv = n;
+  [].forEach.call(document.querySelectorAll('#levels button'), function(b){ b.setAttribute('aria-pressed', String(+b.dataset.lv === n)); });
+  startSet();
+  track('moji_level', {level: n});
+}
+
+inEl.addEventListener('compositionstart', function(){ composing = true; });
+inEl.addEventListener('compositionend', function(){ composing = false; render(); });
+inEl.addEventListener('input', function(e){
+  if (done) return;
+  if (!startAt) { startAt = Date.now(); track('moji_start', {level: lv}); }
+  if (typeof e.isComposing === 'boolean' && !e.isComposing && e.inputType !== 'insertCompositionText') composing = false;
+  render();
+});
+inEl.addEventListener('keydown', function(e){ if (e.key === 'Enter' && !e.isComposing) e.preventDefault(); });
+// キーボードが出たら、問題が画面の上に来るようにする
+inEl.addEventListener('focus', function(){
+  setTimeout(function(){ var y = $('practice').getBoundingClientRect().top + window.pageYOffset - 4; window.scrollTo(0, y); }, 350);
+});
+
+$('levels').addEventListener('click', function(e){ var b = e.target.closest('button'); if (b) setLevel(+b.dataset.lv); });
+$('skip').addEventListener('click', function(){ skipped++; if (!startAt) startAt = Date.now(); done = true; nextQ(); inEl.focus(); });
+$('guide-toggle').addEventListener('click', function(){
+  guideOff = !guideOff;
+  try { localStorage.setItem(GUIDE_KEY, guideOff ? '1' : '0'); } catch (e) {}
+  this.textContent = guideOff ? '案内を出す' : '案内をかくす';
+  render();
+  track('moji_guide_toggle', {state: guideOff ? 'off' : 'on'});
+});
+$('again').addEventListener('click', function(){ startSet(); inEl.focus(); });
+$('next-lv').addEventListener('click', function(){ setLevel(Math.min(4, lv + 1)); inEl.focus(); });
+
+$('guide-toggle').textContent = guideOff ? '案内を出す' : '案内をかくす';
+startSet();
+})();
+</script>
+</body>
+</html>
