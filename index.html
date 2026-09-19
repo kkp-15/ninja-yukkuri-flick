@@ -94,8 +94,10 @@ h1{font-size:1.25rem;line-height:1.4;margin-bottom:4px}
 .q .ng{color:#c62828;background:#fde4e4}
 .q .next{border-bottom-color:#d9531f;background:#fff1e3}
 .guide{font-size:1.02rem;line-height:1.55;border-left:4px solid #d9531f;background:#fffaf3;padding:4px 10px;margin-bottom:8px;min-height:3.2em}
-.guide .lbl{display:inline-block;min-width:6.2em;color:#555}
+.guide .lbl{display:inline-block;min-width:6.4em;color:#555;font-size:.9rem}
 .guide b{font-size:1.12rem;color:#111}
+.guide .key{display:inline-block;border:1px solid #8a7a60;border-radius:4px;background:#fff;padding:0 5px;line-height:1.35;font-weight:bold;color:#111;white-space:nowrap}
+.guide .key.mod{letter-spacing:-.2em;padding:0 7px 0 3px}
 .guide .same{display:block;font-size:.92rem;color:#8a3a12}
 .in{width:100%;font:inherit;font-size:1.6rem;padding:8px 10px;border:2px solid #555;border-radius:6px;background:#fff;color:#111;letter-spacing:.06em}
 .in:focus{outline:3px solid #f0a060;outline-offset:1px;border-color:#c2451a}
@@ -202,7 +204,7 @@ h1{font-size:1.25rem;line-height:1.4;margin-bottom:4px}
   <p class="date">公開 2026年9月19日</p>
   <ol>
     <li>入力の枠をタップすると、スマホのキーボードが出ます。</li>
-    <li>上に出ている字を打ちます。つぎに打つ字には下線がつき、押すキーと方向が案内に出ます。</li>
+    <li>上に出ている字を打ちます。つぎに打つ字には下線がつき、押すキーと方向が案内に出ます。「＋」のあとは、そのあとに押すキーです。</li>
     <li>ぜんぶ打てたら、キーボード右下の「確定」を押します。つぎの問題に進みます。</li>
     <li>ちがう字は赤くなります。消すキー（⌫）で消して、打ち直してください。</li>
   </ol>
@@ -278,7 +280,7 @@ var WORDS = {
 var KEYS = {'あ':'あいうえお','か':'かきくけこ','さ':'さしすせそ','た':'たちつてと','な':'なにぬねの','は':'はひふへほ','ま':'まみむめも','や':'や「ゆ」よ','ら':'らりるれろ','わ':'わをんー'};
 // ケータイ打ちで押す回数（や・わ の行は括弧や空きがあるので別に持つ）
 var TOGGLE = {'や':{'や':1,'ゆ':2,'よ':3},'わ':{'わ':1,'を':2,'ん':3,'ー':4}};
-var DIRS = ['そのまま離す','←左へ','↑上へ','→右へ','↓下へ'];
+var DIRS = ['', '←左へ','↑上へ','→右へ','↓下へ'];
 var SMALL = {'ぁ':'あ','ぃ':'い','ぅ':'う','ぇ':'え','ぉ':'お','っ':'つ','ゃ':'や','ゅ':'ゆ','ょ':'よ','ゎ':'わ'};
 
 function locate(ch){
@@ -295,9 +297,8 @@ function locate(ch){
   return null;
 }
 function modText(mod){
-  if (mod === 'daku') return '、そのあと <b>゛゜小</b> を1回';
-  if (mod === 'handaku') return '、そのあと <b>゛゜小</b> を2回';
-  if (mod === 'small') return '、そのあと <b>゛゜小</b> を1回';
+  if (mod === 'daku' || mod === 'small') return ' ＋ <span class="key mod">゛゜小</span> 1回';
+  if (mod === 'handaku') return ' ＋ <span class="key mod">゛゜小</span> 2回';
   return '';
 }
 
@@ -377,11 +378,12 @@ function showGuide(i, err){
   if (i >= t.length) { guideEl.innerHTML = '全部打てました。右下の「確定」を押します。'; return; }
   var ch = t[i], L = locate(ch);
   if (!L) { guideEl.innerHTML = 'つぎの字 <b>' + ch + '</b>'; return; }
-  var flick = L.idx === 0 ? '<b>' + L.key + '</b> を軽く押して離す' : '<b>' + L.key + '</b> に指を置いて <b>' + DIRS[L.idx] + '</b>';
-  var toggle = '<b>' + L.key + '</b> を <b>' + L.taps + '回</b>';
+  var flick = '<span class="key">' + L.key + '</span> ' + (L.idx === 0 ? '押して離す' : '<b>' + DIRS[L.idx] + '</b>');
+  var toggle = '<span class="key">' + L.key + '</span> <b>' + L.taps + '回</b>';
   var same = '';
   if (i > 0) { var P = locate(t[i - 1]); if (P && P.key === L.key) same = '<span class="same">ケータイ打ちでは、前の字と同じキーなので、先に <b>→</b> のキーを押します</span>'; }
-  guideEl.innerHTML = 'つぎの字 <b>' + ch + '</b><br>' +
+  var name = L.mod === 'small' ? '（小さい' + L.base + '）' : '';
+  guideEl.innerHTML = 'つぎの字 <b>' + ch + '</b>' + name + '<br>' +
     '<span class="lbl">フリック</span>' + flick + modText(L.mod) + '<br>' +
     '<span class="lbl">ケータイ打ち</span>' + toggle + modText(L.mod) + same;
 }
