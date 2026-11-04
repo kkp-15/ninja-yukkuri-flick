@@ -136,6 +136,21 @@ h1{font-family:var(--k-head);font-weight:800;font-size:19px;line-height:1.35;mar
 .rbtns{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
 .rbtns .k-btn-main{font-size:18px}
 #result .kkp-ad{margin-top:24px}
+/* 本の紹介（Amazonアソシエイト・2026-11-04） */
+.bk{margin-top:26px}
+.bk>h2{margin:0;padding-bottom:4px;border-bottom:2px solid var(--k-sumi);font-size:18px;font-weight:800}
+.bk-pr{margin:8px 0 2px;font-size:12px;line-height:1.6;color:var(--k-text-2)}
+.bk-pr span{display:inline-block;margin-right:6px;padding:0 5px;border:1.5px solid var(--k-text-2);border-radius:3px;font-weight:800}
+.bk-list{margin:0;padding:0;list-style:none}
+.bk-list li{border-bottom:1px solid var(--k-line-soft)}
+.bk-list a{display:flex;flex-direction:column;justify-content:center;min-height:52px;padding:8px 26px 8px 0;position:relative;text-decoration:none;color:var(--k-sumi)}
+.bk-list b{font-size:15px;font-weight:800;line-height:1.45}
+.bk-list span{font-size:13px;line-height:1.5;color:var(--k-text-2)}
+.bk-list em{font-style:normal;font-weight:800;color:var(--k-sumi)}
+.bk-list a::after{content:"→";position:absolute;right:4px;top:50%;transform:translateY(-50%);color:var(--k-orange)}
+.bk-ku{margin:8px 0 0;font-size:13px;line-height:1.7;color:var(--k-text-2)}
+.bk-ku a{font-weight:800;color:var(--k-sumi)}
+#result .bk>h2{font-size:18px;margin:0}
 
 /* 読み物 */
 .doc{max-width:640px;margin:28px auto 0;padding:0 16px;line-height:1.7}
@@ -213,6 +228,16 @@ h1{font-family:var(--k-head);font-weight:800;font-size:19px;line-height:1.35;mar
            data-ad-format="rectangle"
            data-full-width-responsive="false"></ins>
     </div>
+    <!-- 本の紹介（Amazonアソシエイト・2026-11-04。価格は書かない・読み放題は置いた日に商品ページで確認） -->
+    <section class="bk" aria-labelledby="bk-h">
+      <h2 id="bk-h">スマホの使い方の本</h2>
+      <p class="bk-pr"><span>PR</span>Amazonのリンクです。Amazonのアソシエイトとして、web忍者の砦は適格販売により収入を得ています。</p>
+      <ul class="bk-list">
+        <li><a href="https://www.amazon.co.jp/dp/4866518278?tag=kkp15-22" target="_blank" rel="nofollow sponsored noopener" onclick="if(typeof gtag==='function')gtag('event','aff_amazon_book')"><b>70歳からのスマホ・LINE 世界一わかりやすい安心・安全・便利な使い方Q&amp;A大全</b><span>岡嶋裕史・<em>読み放題の対象</em></span></a></li>
+        <li><a href="https://www.amazon.co.jp/dp/4058025247?tag=kkp15-22" target="_blank" rel="nofollow sponsored noopener" onclick="if(typeof gtag==='function')gtag('event','aff_amazon_book')"><b>「できた！」が増える 70歳からのゆうゆうスマホ生活</b><span>吉田昂平（埼玉スマホ教室）</span></a></li>
+      </ul>
+      <p class="bk-ku">「読み放題の対象」の本は読み放題で読めます（30日の無料体験あり・初めての人だけ）。<a href="https://www.amazon.co.jp/kindle-dbs/hz/signup?tag=kkp15-22" target="_blank" rel="nofollow sponsored noopener" onclick="if(typeof gtag==='function')gtag('event','aff_amazon_ku')">Kindle Unlimitedの無料体験</a></p>
+    </section>
   </section>
 </main>
 
